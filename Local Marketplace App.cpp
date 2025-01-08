@@ -113,3 +113,12 @@ void searchProduct() {
         cout << "No products found matching '" << query << "'.\n";
     }
 }
+
+// Define sortProductsByPrice function
+void sortProductsByPrice() {
+    sort(products.begin(), products.end(), [](const Product& a, const Product& b) {
+        return a.price < b.price;
+    });
+    cout << "Products sorted by price.\n";
+    viewProducts();
+}
