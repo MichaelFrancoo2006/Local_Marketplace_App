@@ -6,3 +6,6 @@
 
 // Include string header
 #include <string>
+
+// Include algorithm header
+#include <algorithm>
