@@ -168,3 +168,8 @@ int main() {
                 // Handle exit
                 cout << "Exiting...\n";
                 break;
+            default:
+                // Handle invalid choice
+                cout << "Invalid choice. Try again.\n";
+        }
+    } while (choice != 7);
