@@ -152,3 +152,7 @@ int main() {
                 // Handle update product
                 updateProduct();
                 break;
+            case 4:
+                // Handle delete product
+                deleteProduct();
+                break;
