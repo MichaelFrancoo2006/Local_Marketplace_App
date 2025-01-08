@@ -93,3 +93,23 @@ void deleteProduct() {
     products.erase(products.begin() + index - 1);
     cout << "Product deleted successfully.\n";
 }
+
+// Define searchProduct function
+void searchProduct() {
+    string query;
+    cout << "Enter product name to search: ";
+    cin.ignore();
+    getline(cin, query);
+
+    cout << "\n--- Search Results ---\n";
+    bool found = false;
+    for (const auto& product : products) {
+        if (product.name.find(query) != string::npos) {
+            cout << product.name << " - " << product.price << " TZS (Seller: " << product.seller << ")\n";
+            found = true;
+        }
+    }
+    if (!found) {
+        cout << "No products found matching '" << query << "'.\n";
+    }
+}
