@@ -12,3 +12,10 @@
 
 // Start using namespace std
 using namespace std;
+
+// Define Product struct
+struct Product {
+    string name;
+    double price;
+    string seller;
+};
