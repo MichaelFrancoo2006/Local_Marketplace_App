@@ -164,3 +164,7 @@ int main() {
                 // Handle sort products
                 sortProductsByPrice();
                 break;
+            case 7:
+                // Handle exit
+                cout << "Exiting...\n";
+                break;
