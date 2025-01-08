@@ -137,3 +137,6 @@ int main() {
         cout << "7. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
+        
+        // Add switch case for menu
+        switch (choice) {
