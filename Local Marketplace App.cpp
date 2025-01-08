@@ -156,3 +156,7 @@ int main() {
                 // Handle delete product
                 deleteProduct();
                 break;
+            case 5:
+                // Handle search product
+                searchProduct();
+                break;
