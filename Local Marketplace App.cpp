@@ -148,3 +148,7 @@ int main() {
                 // Handle view products
                 viewProducts();
                 break;
+            case 3:
+                // Handle update product
+                updateProduct();
+                break;
