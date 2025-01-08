@@ -78,3 +78,18 @@ void updateProduct() {
     products[index - 1] = {name, price, seller};
     cout << "Product updated successfully.\n";
 }
+
+// Define deleteProduct function
+void deleteProduct() {
+    int index;
+    cout << "Enter the product number to delete: ";
+    cin >> index;
+
+    if (index < 1 || index > products.size()) {
+        cout << "Invalid product number.\n";
+        return;
+    }
+
+    products.erase(products.begin() + index - 1);
+    cout << "Product deleted successfully.\n";
+}
