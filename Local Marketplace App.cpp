@@ -9,3 +9,6 @@
 
 // Include algorithm header
 #include <algorithm>
+
+// Start using namespace std
+using namespace std;
