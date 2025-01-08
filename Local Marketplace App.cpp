@@ -3,3 +3,6 @@
 
 // Include vector header
 #include <vector>
+
+// Include string header
+#include <string>
