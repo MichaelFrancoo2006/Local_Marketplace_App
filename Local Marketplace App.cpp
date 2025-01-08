@@ -52,3 +52,29 @@ void viewProducts() {
         cout << "No products available.\n";
     }
 }
+
+// Define updateProduct function
+void updateProduct() {
+    int index;
+    cout << "Enter the product number to update: ";
+    cin >> index;
+
+    if (index < 1 || index > products.size()) {
+        cout << "Invalid product number.\n";
+        return;
+    }
+
+    string name, seller;
+    double price;
+    cout << "Enter new product name: ";
+    cin.ignore();
+    getline(cin, name);
+    cout << "Enter new product price: ";
+    cin >> price;
+    cout << "Enter new seller name: ";
+    cin.ignore();
+    getline(cin, seller);
+
+    products[index - 1] = {name, price, seller};
+    cout << "Product updated successfully.\n";
+}
