@@ -19,3 +19,6 @@ struct Product {
     double price;
     string seller;
 };
+
+// Declare products vector
+vector<Product> products;
