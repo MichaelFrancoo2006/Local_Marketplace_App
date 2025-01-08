@@ -39,3 +39,16 @@ void addProduct() {
     products.push_back({name, price, seller});
     cout << "Product added successfully.\n";
 }
+
+// Define viewProducts function
+void viewProducts() {
+    cout << "\n--- Product Listings ---\n";
+    for (size_t i = 0; i < products.size(); i++) {
+        cout << i + 1 << ". " << products[i].name << " - " 
+             << products[i].price << " TZS (Seller: " 
+             << products[i].seller << ")\n";
+    }
+    if (products.empty()) {
+        cout << "No products available.\n";
+    }
+}
