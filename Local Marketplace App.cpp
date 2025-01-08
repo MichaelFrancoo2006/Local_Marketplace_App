@@ -22,3 +22,20 @@ struct Product {
 
 // Declare products vector
 vector<Product> products;
+
+// Define addProduct function
+void addProduct() {
+    string name, seller;
+    double price;
+    cout << "Enter product name: ";
+    cin.ignore();
+    getline(cin, name);
+    cout << "Enter product price: ";
+    cin >> price;
+    cout << "Enter seller name: ";
+    cin.ignore();
+    getline(cin, seller);
+
+    products.push_back({name, price, seller});
+    cout << "Product added successfully.\n";
+}
