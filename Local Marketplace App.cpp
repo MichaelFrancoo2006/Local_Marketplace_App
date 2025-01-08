@@ -122,3 +122,18 @@ void sortProductsByPrice() {
     cout << "Products sorted by price.\n";
     viewProducts();
 }
+
+// Start main function
+int main() {
+    int choice;
+    do {
+        cout << "\n--- Local Marketplace ---\n";
+        cout << "1. Add Product\n";
+        cout << "2. View Products\n";
+        cout << "3. Update Product\n";
+        cout << "4. Delete Product\n";
+        cout << "5. Search Product\n";
+        cout << "6. Sort Products by Price\n";
+        cout << "7. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
