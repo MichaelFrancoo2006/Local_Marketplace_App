@@ -173,3 +173,7 @@ int main() {
                 cout << "Invalid choice. Try again.\n";
         }
     } while (choice != 7);
+    
+    // Return from main function
+    return 0;
+}
