@@ -140,3 +140,7 @@ int main() {
         
         // Add switch case for menu
         switch (choice) {
+        	case 1:
+                // Handle add product
+                addProduct();
+                break;
