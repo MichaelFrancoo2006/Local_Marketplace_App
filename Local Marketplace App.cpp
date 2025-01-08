@@ -160,3 +160,7 @@ int main() {
                 // Handle search product
                 searchProduct();
                 break;
+            case 6:
+                // Handle sort products
+                sortProductsByPrice();
+                break;
